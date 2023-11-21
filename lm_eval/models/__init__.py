@@ -5,6 +5,7 @@ from . import huggingface
 from . import textsynth
 from . import dummy
 from . import ggml
+from . import mlc
 
 MODEL_REGISTRY = {
     "hf": gpt2.HFLM,
@@ -16,7 +17,8 @@ MODEL_REGISTRY = {
     "anthropic": anthropic_llms.AnthropicLM,
     "textsynth": textsynth.TextSynthLM,
     "dummy": dummy.DummyLM,
-    "ggml": ggml.GGMLLM
+    "ggml": ggml.GGMLLM,
+    "mlc": mlc.MLCLM,
 }
 
 
